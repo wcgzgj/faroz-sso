@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import sso.pojo.Demo;
 import sso.service.DemoService;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -24,6 +25,7 @@ public class DemoController {
 
     @RequestMapping("/list")
     public List<Demo> list() {
+
         return demoService.getList();
     }
 }
